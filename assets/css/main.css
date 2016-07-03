@@ -3320,7 +3320,7 @@
 						padding: 0 1.5em;
 						text-transform: uppercase;
 					}
-					
+
 						@media screen and (max-width: 736px) {
 
 							#header nav > ul > li > a {
@@ -3792,11 +3792,12 @@
 	}
 	.left-footer {
 		margin-left: 10%;
-		margin-right: 50px;
+		margin-right: 100px;
 	}
 
 .most-right {
-	margin-top: 50px;
+	margin-top: 80px;
+	margin-left: 100px;
 }
 
 .most-right, .right-footer {
