@@ -3754,3 +3754,13 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+=
+	}
+
+	@media screen and (max-width: 980px) {
+			.navText {display: none;}
+	}
+
+	@media screen and (max-width: 736px) {
+		.navText {display: none;}
+	}
