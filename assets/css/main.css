@@ -3754,13 +3754,38 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
-=
+
+	.menuTable {
+		margin-left: 3em;
+		margin-right: 3em;
 	}
 
 	@media screen and (max-width: 980px) {
-			.navText {display: none;}
-	}
+			.menuToggle, .navLink {display: none;}
+			.menuTable {
+				margin: auto !important;
+			}
+
+			.menu, thead, tbody, th, td, tr {
+				display: block;
+			}
+			#menuName {
+				display: none;
+			}
+}
 
 	@media screen and (max-width: 736px) {
-		.navText {display: none;}
+		.menuToggle, .navLink {display: none;}
+		.menu {
+			margin: auto !important;
+
+		}
+		.menu, thead, tbody, th, td, tr {
+			display: block;
+
 	}
+		#menuName {
+			display: none;
+		}
+
+}
