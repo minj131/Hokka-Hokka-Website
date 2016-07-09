@@ -1399,10 +1399,19 @@
 		border: 0;
 		text-decoration: none !important;
 		display: inline-block;
-		margin-right: 25px
+		margin-right: 25px;
 	}
 
-	.navText:hover, .navText:visited, .navText.active {
+	.navLink  {
+		border: 0;
+		text-decoration: none !important;
+
+	}
+	.navLink:hover  {
+		color: #949393;
+	}
+
+	.navText:hover, .navText:visited, .navText.active, .navText.focus {
 		text-decoration: none !important;
 		color: #949393;
 		border: 0;
