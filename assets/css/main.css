@@ -3849,8 +3849,33 @@
 .navDrop {
 	display: none;
 }
+.yelp-mobile {
+	display: none;
+}
 /**drop down **/
 @media screen and (max-width:680px) {
+
+.yelp {
+	display: none;
+}
+
+.yelp-mobile {
+	border: 1px solid black;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	padding: 5px 10px 10px 10px;
+	font-size: 16px;
+	float: center;
+	margin-left: 16%;
+	margin-bottom: 10%;
+	border-radius: 4px;
+}
+
+.yelp-mobile:hover {
+    color: #D3D3D3;
+}
 
 .navDrop {
 	display: inline-block;
@@ -3880,7 +3905,7 @@
     text-decoration: none;
 		border: none;
 		outline: none;
-		text-decoration: none;
+
 }
 
 .dropdown a:hover, .dropdown:hover .dropbtn {
