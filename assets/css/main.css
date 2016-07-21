@@ -3877,6 +3877,10 @@
     color: #D3D3D3;
 }
 
+.navLinkMenu {
+	display: inline;
+}
+
 .navDrop {
 	display: inline-block;
     list-style-type: none;

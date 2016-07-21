@@ -22,7 +22,9 @@
 		<link rel="shortcut icon" href="images/hokka-icon.ico" type="images/hokka-icon.ico">
 		<link rel="canonical" href="http://http://www.restauranthokka.com/"/>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<link rel="stylesheet" href="assets/css/style.css"/>
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -86,50 +88,47 @@
 								</section>
 								<section>
 									<p style="text-align: center;">Need a reservation? Have any questions regarding the menu? Looking to book an event? <br> Feel free to contact us at (215) 242-4489 or submit a form below!</p>
+
+									<hr />
+																		<div style="text-align: center;" class="yelp">
+																		<p style="font-size:1.5em; margin-bottom: 10px;"> Reserve Now!</p>
+																		<iframe id="seatme-widget" frameborder="0" width="640" height="60" src="https://www.yelpreservations.com/api/v3/widget.htm?restaurant_id=c0ef105e-96cf-4964-8c15-26a5d5ee6bb6&color=%23c41200&color-scheme=light&orientation=horizontal"></iframe><style type="text/css">#seatme-link a:link {text-decoration: none; color:#b3b3b3} #seatme-link a:hover {text-decoration: none; color:#066382} #seatme-link a:visited {text-decoration: none; color:#066382}</style><div id="seatme-link"><a style="font: normal 9px Helvetica Neue, Helvetica, sans-serif; margin-left:15px;" href="https://www.yelpreservations.com/">RESTAURANT RESERVATIONS BY YELP</a></div>
+																	<br>
+																	</div>
+
+																	<div class="yelp-mobile">
+																		<a href="https://www.yelpreservations.com/r/edb4f88b5fda7b73f7d389de810dec63/" style="border: none;" class="yelp-color"><strong>Click Here to Reserve Now!</a>
+																	</div>
 									<hr />
 
 									<!--Yelp Widget-->
 
-									<div style="text-align: center;" class="yelp">
-									<p style="font-size:1.5em; margin-bottom: 10px;"> Reserve Now!</p>
-									<iframe id="seatme-widget" frameborder="0" width="640" height="60" src="https://www.yelpreservations.com/api/v3/widget.htm?restaurant_id=c0ef105e-96cf-4964-8c15-26a5d5ee6bb6&color=%23c41200&color-scheme=light&orientation=horizontal"></iframe><style type="text/css">#seatme-link a:link {text-decoration: none; color:#b3b3b3} #seatme-link a:hover {text-decoration: none; color:#066382} #seatme-link a:visited {text-decoration: none; color:#066382}</style><div id="seatme-link"><a style="font: normal 9px Helvetica Neue, Helvetica, sans-serif; margin-left:15px;" href="https://www.yelpreservations.com/">RESTAURANT RESERVATIONS BY YELP</a></div>
-								<br>
-								</div>
-
-								<div class="yelp-mobile">
-									<a href="https://www.yelpreservations.com/r/edb4f88b5fda7b73f7d389de810dec63/" style="border: none;" class="yelp-color"><strong>Click Here to Reserve Now!</a>
-								</div>
 
 									<section>
-										<h4 style = "text-align: center; padding-bottom: 15px;">Contact Form</h4>
-										<form method="post" action="MAILTO:hokkarestaurant@gmail.com">
-											<div class="row uniform">
-												<div class="6u 12u$(xsmall)">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="6u$ 12u$(xsmall)">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
+										<h4 style = "text-align: center; padding-bottom: 15px; font-size: 2em;">Contact Form</h4>
 
-												<div class="12u$">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="12u$">
-													<div class="6u 12u$(small)">
-														<input type="checkbox" id="demo-copy" name="demo-copy">
-														<label for="demo-copy">Email me a copy</label>
-													</div>
-													<div class="6u$ 12u$(small)">
-														<input type="checkbox" id="demo-human" name="demo-human">
-														<label for="demo-human">Not a robot</label>
-													</div>
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" class="special" /></li>
-														<li><input type="reset" value="Reset" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
+<div id="form-messages"></div>
+										<form id="ajax-contact" method="post" action="mailer.php">
+    <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+
 									</section>
 							</div>
 						</section>
