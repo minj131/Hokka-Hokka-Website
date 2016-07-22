@@ -1,6 +1,6 @@
 # hokka-hokka
 
-website for hokka-hokka restaurant.
+Website project for hokka-hokka restaurant.
 
 
-unofficial demo: http://hokka.paperplane.io/index.html
+<a href="www.restauranthokka.com"> Live Website </a>
