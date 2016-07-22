@@ -3,4 +3,4 @@
 Website project for hokka-hokka restaurant.
 
 
-<a href="www.restauranthokka.com"> Live Website </a>
+<a href="http://www.restauranthokka.com/"> Live Website </a>
