@@ -1,6 +1,5 @@
 # hokka-hokka
 
-Website project for hokka-hokka restaurant.
+Freelance project for a restaurant. Uses a basic web stack with a simple PHPMailer.
 
-
-<a href="http://www.restauranthokka.com/"> Live Website </a>
+Probably deprecated at this point.
